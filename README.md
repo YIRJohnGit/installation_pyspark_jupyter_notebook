@@ -3,8 +3,8 @@ Step by Step Spark Installation with Ubuntu + Python + Jupyter Notebook - From S
 ====================================
 # Spark Installation with Python + Jupyter Notebook #
 
-## Prerequitist and Installation (Optional, Since Run Hadoop) ##
-Move on to Step 3, If you are not using on top of Hadoop
+## Prerequitist and Installation (Optional) ##
+___Move on to Step 3, If you are not using on top of Hadoop___
 current Logged User Name: **_hadoop_**
 host: **_localhost_**
 ```
