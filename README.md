@@ -127,6 +127,7 @@ pip3 install tensorflow
 _Result_
 ![image](https://user-images.githubusercontent.com/111234771/195503927-901eaa70-dd0b-44f5-a224-59e7a4ef3962.png)
 
-$ pyspark
->>>
+___Start PySpark Jupyter Notebook___
+```
+~/spark/bin/pyspark
 ```
