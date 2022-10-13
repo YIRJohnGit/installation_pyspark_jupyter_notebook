@@ -101,15 +101,13 @@ jupyter notebook
 _Result_
 ![image](https://user-images.githubusercontent.com/111234771/195502410-c2a0ca7d-005d-46ab-94a8-1e1fc1a966e7.png) 
 
-___Create a New___
+___Run The Sample File from Git URL___
 ```
-import pyspark
-from pyspark import SparkSession
-spark = SparkSession.builder.appName('TestingSpark').getOrCreate()
-print(spark)
+git pull https://github.com/YIRJohnGit/sample_pyspark.git
 ```
 
-
+_Result_
+![image](https://user-images.githubusercontent.com/111234771/195503927-901eaa70-dd0b-44f5-a224-59e7a4ef3962.png)
 
 $ pyspark
 >>>
