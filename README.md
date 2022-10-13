@@ -37,7 +37,7 @@ sudo apt-get install -y default-jre
 cd ~/Downloads
 wget --continue https://dlcdn.apache.org/spark/spark-3.2.2/spark-3.2.2-bin-hadoop3.2.tgz
 tar -xzvf spark-3.2.2-bin-hadoop3.2.tgz
-mv spark-3.2.2-bin-hadoop3.2.tgz ~/spark
+mv spark-3.2.2-bin-hadoop3.2 ~/spark
 ```
 
 ### Step-4 - Install PIP and Jupyter ###
@@ -50,9 +50,11 @@ _To Exit from the python shell type quit() >>>_
 ```
 quit()
 ```
-
+**_Install pip3 and Jupyter for Python_**
 ```
 sudo apt install -y python3-pip
+```
+```
 pip3 install jupyter
 ```
 
