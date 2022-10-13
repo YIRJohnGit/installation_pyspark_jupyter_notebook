@@ -58,36 +58,14 @@ sudo apt install -y python3-pip
 pip3 install jupyter
 ```
 
-### Step-5 - Add Environment Variables ###
-```
-sudo nano ~/.bashrc
-```
-**_Add the below Change to the ~/.bashrc File and Save_**
-```
-# Adding Local bin to the Path
-export PATH=$PATH:/.local/bin
-```
-_Result_
-
-
-**_Initiate the default changes_**
-```
-source ~/.bashrc
-```
-
-_Start the Jupyter Notbook and Verify_
-```
-jupyter notebook
-```
-
-### Step-6 - Install of Scala and Python for Java ###
+### Step-5 - Install of Scala and Python for Java ###
 ```
 sudo apt-get install -y scala
 scala -version
 pip3 install py4j
 ```
 
-### Step-7 - Add Environment Variables ###
+### Step-6 - Add Environment Variables ###
 ```
 sudo nano ~/.bashrc
 ```
@@ -120,6 +98,8 @@ _Result_
 ```
 jupyter notebook
 ```
+_Result_
+![image](https://user-images.githubusercontent.com/111234771/195502410-c2a0ca7d-005d-46ab-94a8-1e1fc1a966e7.png) 
 
 ___Create a New___
 ```
