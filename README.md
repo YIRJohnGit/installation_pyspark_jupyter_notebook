@@ -27,6 +27,10 @@ sudo apt remove icedtea*
 ```
 sudo apt install -y openjdk-8-jdk openjdk-8-jre
 ```
+_Optional if Needed can be use with latest version, but read the documentation for Latest Updates_
+```
+sudo apt-get install -y default-jre
+```
 
 ### Step-3 - Download hive from the below link ###
 ```
@@ -40,54 +44,86 @@ mv spark-3.2.2-bin-hadoop3.2.tgz ~/spark
 ```
 whereis python3
 python3 --version
-
 python3
+```
+_To Exit from the python shell type quit() >>>_
+```
+quit()
 ```
 
 ```
 sudo apt install -y python3-pip
 pip3 install jupyter
 ```
-====================================
 
-sudo nano ~./bashrc
-
-
-
-$ export PATH=$PATH:/.local/bin
-$ jupyter notebook
-
-=======
-$ sudo apt-get update
-$ sudo apt-get install default-jre
-$ java -version
-
-$ sudo apt-get install -y scala
-$ scala -version
-$ pip3 install py4j
+### Step-5 - Add Environment Variables ###
+```
+sudo nano ~/.bashrc
+```
+**_Add the below Change to the ~/.bashrc File and Save_**
+```
+# Adding Local bin to the Path
+export PATH=$PATH:/.local/bin
+```
+_Result_
 
 
+**_Initiate the default changes_**
+```
+source ~/.bashrc
+```
 
-$ export SPARK_HOME=/home/hadoop/spark
-$ export PATH=$PATH:$SPARK_HOME
-$ export PYTHONPATH=$SPARK_HOME/python:$PYTHONPATH
-$ export PYSPARK_DRIVER_PYTHON="jupyter"
-$ export PYSPARK_DRIVER_PYTHON_OPTS="notebook"
-$ export PYSPARK_PYTHON=python3
+_Start the Jupyter Notbook and Verify_
+```
+jupyter notebook
+```
+
+### Step-6 - Install of Scala and Python for Java ###
+```
+sudo apt-get install -y scala
+scala -version
+pip3 install py4j
+```
+
+### Step-7 - Add Environment Variables ###
+```
+sudo nano ~/.bashrc
+```
+
+**_Add the below Change to the ~/.bashrc File and Save_**
+```
+# Adding the SpySpark Settings
+export SPARK_HOME=/home/hadoop/spark
+export PATH=$PATH:$SPARK_HOME
+export PYTHONPATH=$SPARK_HOME/python:$PYTHONPATH
+export PYSPARK_DRIVER_PYTHON="jupyter"
+export PYSPARK_DRIVER_PYTHON_OPTS="notebook"
+export PYSPARK_PYTHON=python3
+```
+_Result_
 
 
-$ jupyter notebook
+**_Initiate the default changes_**
+```
+source ~/.bashrc
+```
 
 
-#Create a New 
-	import pyspark
-	from pyspark import SparkSession
-	spark = SparkSession.builder.appName('TestingSpark').getOrCreate()
-	print(spark)
+```
+jupyter notebook
+```
+
+___Create a New___
+```
+import pyspark
+from pyspark import SparkSession
+spark = SparkSession.builder.appName('TestingSpark').getOrCreate()
+print(spark)
+```
 
 
-
-
+Verify Scala and PySpark 
+```
 cd /usr/local/spark
 ls -al
 cd bin
@@ -99,4 +135,4 @@ scala> quit
 
 $ pyspark
 >>>
-
+```
