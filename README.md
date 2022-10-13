@@ -95,6 +95,16 @@ cd $SPARK_HOME/bin
 _Result_
 ![image](https://user-images.githubusercontent.com/111234771/195497835-c8385bba-1f17-4517-aeb6-54f4cb86f322.png)
 
+**_Verify Spark Shell_ sample Code in Scala> prompt**
+
+```
+	val num=Array(1,2,3,56,78)
+	val data = sc.parallelize(num)
+	data.foreach(println)
+```
+_Result_
+![image](https://user-images.githubusercontent.com/111234771/195506221-5246cfbb-79e3-49f0-b3c6-61beeee51503.png)
+
 ```
 jupyter notebook
 ```
