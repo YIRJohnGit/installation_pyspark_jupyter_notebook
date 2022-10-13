@@ -109,7 +109,13 @@ _Result_
 ```
 source ~/.bashrc
 ```
-
+**_Verify Spark Shell_ tpye quit to exit**
+```
+cd $SPARK_HOME/bin
+./spark-shell
+```
+_Result_
+![image](https://user-images.githubusercontent.com/111234771/195497835-c8385bba-1f17-4517-aeb6-54f4cb86f322.png)
 
 ```
 jupyter notebook
@@ -124,16 +130,6 @@ print(spark)
 ```
 
 
-Verify Scala and PySpark 
-```
-cd /usr/local/spark
-ls -al
-cd bin
-ls -al
-
-$ spark_shell
-# collect the url to check
-scala> quit
 
 $ pyspark
 >>>
