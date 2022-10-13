@@ -121,6 +121,7 @@ git pull https://github.com/YIRJohnGit/sample_pyspark.git
 ## Installation of Additional Libraries ##
 ```
 pip3 install sklearn
+pip3 install Keras
 ```
 _Result_
 ![image](https://user-images.githubusercontent.com/111234771/195503927-901eaa70-dd0b-44f5-a224-59e7a4ef3962.png)
