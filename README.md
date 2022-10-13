@@ -1,6 +1,3 @@
-https://youtu.be/N8-3kCscjrU
-Step by Step Spark Installation with Ubuntu + Python + Jupyter Notebook - From Scratch
-====================================
 # Spark Installation with Python + Jupyter Notebook #
 
 ## Prerequitist and Installation (Optional) ##
