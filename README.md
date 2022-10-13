@@ -87,13 +87,14 @@ _Result_
 ```
 source ~/.bashrc
 ```
-**_Verify Spark Shell_ tpye quit to exit**
+**_Verify Spark Shell_ tpye :quit to exit**
 ```
 cd $SPARK_HOME/bin
 ./spark-shell
+:quit
 ```
 _Result_
-![image](https://user-images.githubusercontent.com/111234771/195497835-c8385bba-1f17-4517-aeb6-54f4cb86f322.png)
+![image](https://user-images.githubusercontent.com/111234771/195506716-24442271-c58f-4de1-a427-61e7b916ca21.png)
 
 **_Verify Spark Shell_ sample Code in Scala> prompt**
 
