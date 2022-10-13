@@ -36,7 +36,7 @@ sudo apt-get install -y default-jre
 ```
 cd ~/Downloads
 wget --continue https://dlcdn.apache.org/spark/spark-3.2.2/spark-3.2.2-bin-hadoop3.2.tgz
-tar -zxvr spark-3.2.2-bin-hadoop3.2.tgz
+tar -xzvf spark-3.2.2-bin-hadoop3.2.tgz
 mv spark-3.2.2-bin-hadoop3.2.tgz ~/spark
 ```
 
